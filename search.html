@@ -71,10 +71,10 @@
             animalLocation = Math.round(Math.random() * (23));//(max-min)-min i.e. (23-0)+0
             document.getElementById("tries").innerHTML = "Number of tries is zero";
             distanceOfAnimal = "unknown"
-            document.getElementById("distance").innerHTML = "Distance is " + distanceOfAnimal;
+            document.getElementById("distance").innerHTML = "Distance is " + animalLength;
             for (var i = 0; i < 24; i++) {
 
-                document.getElementById(ids[i]).src = "tree.jpg";
+                document.getElementById(ids[i]).src = "plant.jpg";
     }
   }
 }
@@ -126,6 +126,8 @@
       <div class="image-col"><img src="Plant.jpg" alt="Plant image" id="plant22" class="mw-100 grid-image" onclick="check(22)"></div>
       <div class="image-col"><img src="Plant.jpg" alt="Plant image" id="plant23" class="mw-100 grid-image" onclick="check(23)"></div>
   </div>
+
+  <button type="button" class="btn btn-primary" onclick="resetTriesAndLocation()">Reset All</button>
 </div>
 </body>
 </html>
